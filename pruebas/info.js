@@ -75,4 +75,34 @@ btnToggleImage.addEventListener("click", () => {
   toggleImage(currentImageId, targetImageId);
 });
 
-  
+
+
+//adicionar al arreglo
+let arregloStrings = []; // Initialize empty string array
+function updateArregloLista() {
+  const arregloLista = document.getElementById("arreglo-lista");
+  arregloLista.innerHTML = ""; // Clear existing list items
+
+  arregloStrings.forEach((item, index) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = `${index + 1}. ${item}`; // Add index and item
+    arregloLista.appendChild(listItem);
+  });
+}
+const btnAgregarInicio = document.getElementById("btnAgregarInicio");
+const valorNuevoInput = document.getElementById("valorNuevo");
+
+btnAgregarInicio.addEventListener("click", () => {
+  const nuevoValor = valorNuevoInput.value.trim(); // Get and trim input value
+
+  if (nuevoValor) {
+    arregloStrings.unshift(nuevoValor); // Add to the beginning of the array
+    valorNuevoInput.value = ""; // Clear input field
+
+    updateArregloLista(); // Update the list
+  }
+});
+
+
+//agregar al final
+
