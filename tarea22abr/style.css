@@ -18,9 +18,9 @@ h1 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 10px;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: -10px;
 }
 
 main {
@@ -33,7 +33,7 @@ section {
 
 h2 {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 ul {
@@ -63,7 +63,7 @@ footer {
 }
 
 .card {
-    width: 300px; /* Ajusta el ancho según tus necesidades */
+    width: 200px; /* Ajusta el ancho según tus necesidades */
     margin: 10px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -101,7 +101,7 @@ footer {
 /* Estilos para el párrafo Lorem Ipsum */
 
 .seccion-lorem-ipsum {
-    padding: 20px;
+    padding: 5px;
     text-align: justify;
 }
 
@@ -114,12 +114,12 @@ footer {
 /* Estilos para la lista de ejemplos */
 
 .seccion-ejemplos {
-    padding: 20px;
+    padding: 10px;
 }
 
 .seccion-ejemplos h2 {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .seccion-ejemplos ul {
@@ -139,11 +139,17 @@ footer {
 
 /* Estilos para los botones */
 
+.cambios{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
 .seccion-botones {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    padding: -10px;
 }
 
 .seccion-botones button {
@@ -156,6 +162,8 @@ footer {
     cursor: pointer;
 }
 
-.seccion-botones button:hover {
-    
+.btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
