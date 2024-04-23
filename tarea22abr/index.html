@@ -17,20 +17,19 @@
     <main>
         <section class="seccion-cards">
             <div class="card">
-                <img src="img/img1.jpg" id = "card1" alt="Imagen 1" id="imagen1">
-                <img src="img/img4.jpg" id = "card1" alt="Imagen 1" id="imagen4" style="display: none;">
+                <img src="img/img1.jpg" id = "card1">
                 <h3>Subtítulo 1</h3>
                 <p>Descripción de la imagen 1.</p>
                 <a href="#">Ir a</a>
             </div>
             <div class="card">
-                <img src="img/img2.jpg" alt="Imagen 2">
+                <img src="img/img2.jpg" id = "card2">
                 <h3>Subtítulo 2</h3>
                 <p>Descripción de la imagen 2.</p>
                 <a href="#">Ir a</a>
             </div>
             <div class="card">
-                <img src="img/img3.jpg" alt="Imagen 3">
+                <img src="img/img3.jpg" id = "card3">
                 <h3>Subtítulo 3</h3>
                 <p>Descripción de la imagen 3.</p>
                 <a href="#">Ir a</a>
@@ -62,9 +61,9 @@
                     <h2 class="tit.img">Cambiar Imagenes</h2>
                 </section>
                 <section class="btn">
-                    <button id="btnToggleImage1">Card 1</button>
-                    <button>Card 2</button>
-                    <button>Card 3</button>
+                    <button onclick="cambiarImagen1()">Card 1</button>
+                    <button onclick="cambiarImagen2()">Card 2</button>
+                    <button onclick="cambiarImagen3()">Card 3</button>
                 </section>
             </section>
             <section class="seccion-botones">

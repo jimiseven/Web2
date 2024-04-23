@@ -87,30 +87,35 @@ btnEliminarFinal.addEventListener("click", () => {
 });
 
 
-//funcionalidad cambio de imagen
-function toggleImage(currentImageId, targetImageId) {
-    const currentImage = document.getElementById(currentImageId);
-    const targetImage = document.getElementById(targetImageId);
-  
-    // Hide the currently displayed image
-    currentImage.style.display = "none";
-  
-    // Show the target image
-    targetImage.style.display = "block";
-  }
+//funcionalidad cambio de imagen card1
+let indiceImagen1 = 1; // Indice de la imagen actual (1 para img1.jpg)
 
-  const btnToggleImage = document.getElementById("btnToggleImage1");
+function cambiarImagen1() {
+    const imagen = document.getElementById("card1"); // Obtener la referencia a la imagen
+  const imagenes = ["img/img1.jpg", "img/img4.jpg"]; // Array con las URLs de las imágenes
 
-btnToggleImage.addEventListener("click", () => {
-  let currentImageId = "imagen1"; // Initially assume Image 1 is displayed
-  let targetImageId = "imagen4";
+  indiceImagen1 = (indiceImagen1 + 1) % imagenes.length; // Calcular el nuevo índice
+  imagen.src = imagenes[indiceImagen1]; // Cambiar la fuente de la imagen
+}
 
-  // Check which image is currently displayed and switch to the other one
-  const displayedImage = document.querySelector(".card1 img:not([style='display: none'])");
-  if (displayedImage) {
-    currentImageId = displayedImage.id;
-    targetImageId = currentImageId === "imagen1" ? "imagen4" : "imagen1";
-  }
+//funcionalidad cambio de imagen card2
+let indiceImagen2= 1; // Indice de la imagen actual (1 para img1.jpg)
 
-  toggleImage(currentImageId, targetImageId);
-});
+function cambiarImagen2() {
+    const imagen = document.getElementById("card2"); // Obtener la referencia a la imagen
+  const imagenes = ["img/img2.jpg", "img/img5.jpg"]; // Array con las URLs de las imágenes
+
+  indiceImagen2= (indiceImagen2+ 1) % imagenes.length; // Calcular el nuevo índice
+  imagen.src = imagenes[indiceImagen2]; // Cambiar la fuente de la imagen
+}
+
+//funcionalidad cambio de imagen card2
+let indiceImagen3= 1; // Indice de la imagen actual (1 para img1.jpg)
+
+function cambiarImagen3() {
+    const imagen = document.getElementById("card3"); // Obtener la referencia a la imagen
+  const imagenes = ["img/img3.jpg", "img/img6.jpg"]; // Array con las URLs de las imágenes
+
+  indiceImagen3= (indiceImagen3+ 1) % imagenes.length; // Calcular el nuevo índice
+  imagen.src = imagenes[indiceImagen3]; // Cambiar la fuente de la imagen
+}
